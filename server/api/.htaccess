@@ -1,0 +1,5 @@
+php_value date.timezone "Europe/Moscow"
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule api/v1/. api/v1.php [L]
