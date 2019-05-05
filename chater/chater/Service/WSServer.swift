@@ -40,7 +40,7 @@ class WSServer {
         let authString: String = token
         let base64String = authString.data(using: String.Encoding.utf8)!.base64EncodedString()
         
-        var request = URLRequest(url: URL(string: "ws://chater.kostyakulakov.ru/chat")!)
+        var request = URLRequest(url: URL(string: "wss://chater.kkapp.ru/server/chat")!)
         request.setValue("Basic \(base64String)", forHTTPHeaderField: "Authorization")
         
         //Initiate websocket

@@ -13,7 +13,8 @@ class InsideMessageTableViewCell: UITableViewCell {
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var message: UITextView!
     @IBOutlet weak var viewHeight: NSLayoutConstraint!
-  
+    @IBOutlet weak var viewWidth: NSLayoutConstraint!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         message.textContainer.lineFragmentPadding = 0

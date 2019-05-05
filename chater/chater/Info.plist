@@ -28,10 +28,10 @@
 		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>kostyakulakov.ru</key>
+			<key>kkapp.ru</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
+				<false/>
 				<key>NSIncludesSubdomains</key>
 				<true/>
 			</dict>

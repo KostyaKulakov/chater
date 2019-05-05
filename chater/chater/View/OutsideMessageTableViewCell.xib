@@ -33,11 +33,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" text="Hello!" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaW-bW-wzv">
-                                <rect key="frame" x="9" y="20" width="160" height="30"/>
+                                <rect key="frame" x="9" y="20" width="161" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="zCN-GK-MhZ"/>
-                                </constraints>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -52,12 +49,14 @@
                         <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sg5-8s-DWt" firstAttribute="top" secondItem="Xmk-Fv-dlO" secondAttribute="top" constant="4" id="6Kg-gc-SgD"/>
+                            <constraint firstAttribute="trailing" secondItem="FaW-bW-wzv" secondAttribute="trailing" constant="30" id="RYb-xk-bbh"/>
                             <constraint firstAttribute="height" constant="60" id="UTC-rd-r31"/>
                             <constraint firstAttribute="bottom" secondItem="why-bZ-nJq" secondAttribute="bottom" id="Zal-t7-V3p"/>
                             <constraint firstItem="FaW-bW-wzv" firstAttribute="leading" secondItem="Xmk-Fv-dlO" secondAttribute="leading" constant="9" id="cEN-oY-aBI"/>
                             <constraint firstItem="sg5-8s-DWt" firstAttribute="leading" secondItem="Xmk-Fv-dlO" secondAttribute="leading" constant="10" id="clW-Dm-4d2"/>
                             <constraint firstAttribute="trailing" secondItem="why-bZ-nJq" secondAttribute="trailing" constant="5" id="qwb-vd-bRV"/>
                             <constraint firstItem="FaW-bW-wzv" firstAttribute="top" secondItem="Xmk-Fv-dlO" secondAttribute="top" constant="20" id="uvL-eB-Lsf"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sg5-8s-DWt" secondAttribute="trailing" constant="8" id="vmE-c6-u3l"/>
                             <constraint firstAttribute="bottom" secondItem="FaW-bW-wzv" secondAttribute="bottom" constant="10" id="yZg-Cq-CXj"/>
                             <constraint firstAttribute="width" constant="200" id="zzI-m0-4w9"/>
                         </constraints>
@@ -82,6 +81,7 @@
                 <outlet property="name" destination="sg5-8s-DWt" id="m7K-JV-IvV"/>
                 <outlet property="time" destination="why-bZ-nJq" id="cyT-EZ-dyx"/>
                 <outlet property="viewHeight" destination="UTC-rd-r31" id="iwF-tb-J4O"/>
+                <outlet property="viewWidth" destination="zzI-m0-4w9" id="AZ0-6b-LJm"/>
             </connections>
             <point key="canvasLocation" x="47.826086956521742" y="83.705357142857139"/>
         </tableViewCell>

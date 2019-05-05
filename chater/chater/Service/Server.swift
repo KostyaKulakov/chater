@@ -92,5 +92,5 @@ class Server {
         }
     }
     
-    private static var serverUrl = "http://control.chater.kostyakulakov.ru/api/v1/"
+    private static var serverUrl = "https://chater.kkapp.ru/api/v1/"
 }

@@ -39,13 +39,45 @@ class ChatViewModel {
         return rectangleHeight
     }
     
-    func getHeightCell(by index: Int) -> CGFloat {
-        let textWidth = (messages[index].userid == (WSServer.instance.userID ?? 0) ? 135 : 160);
+    func widthText(_ str: String, _ font: UIFont) -> CGSize {
+        let fontAttribute = [NSAttributedString.Key.font: font]
+        let size = str.size(withAttributes: fontAttribute)
+        return size;
+    }
+    
+    let insideConstraintWidth = 45
+    let outsideConstrainWidth = 39
+    
+    let insideConstraintHeight = 16
+    let outsideConstrainHeight = 30
+    
+    let textSize: CGFloat = 14
+    
+    func getWidthtCell(by index: Int) -> CGFloat {
+        let isInternalMessage = (messages[index].userid == (WSServer.instance.userID ?? 0))
+
+        let text = messages[index].message
+        let analyzeText = text.count < messages[index].nickName.count ? messages[index].nickName : text
         
-        let totalLabelHeight = estimatedLabelHeight(text: messages[index].message, width: CGFloat(textWidth), font: UIFont.systemFont(ofSize: 14))
+        var width = self.widthText(analyzeText, UIFont.systemFont(ofSize: textSize)).width
+        
+        
+        if width > 210 {
+            width = 210
+        }
+        
+        return ceil(width) + CGFloat(isInternalMessage ? insideConstraintWidth : outsideConstrainWidth)
+    }
+    
+    func getHeightCell(by index: Int) -> CGFloat {
+        let isInternalMessage = (messages[index].userid == (WSServer.instance.userID ?? 0))
+        
+        let textWidth = self.getWidthtCell(by: index) - CGFloat(isInternalMessage ? insideConstraintWidth : outsideConstrainWidth)
+        
+        let totalLabelHeight = estimatedLabelHeight(text: messages[index].message, width: CGFloat(textWidth), font: UIFont.systemFont(ofSize: textSize))
         
 
-        return ceil(totalLabelHeight)+17 + (messages[index].userid == (WSServer.instance.userID ?? 0) ? 0 : 15)
+        return ceil(totalLabelHeight) + CGFloat(isInternalMessage ? insideConstraintHeight : outsideConstrainHeight)
     }
     
     

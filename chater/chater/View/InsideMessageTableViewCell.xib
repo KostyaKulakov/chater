@@ -32,12 +32,9 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" text="Hello!" textAlignment="right" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FE-dS-6EA">
-                                <rect key="frame" x="9" y="8" width="135" height="29"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" text="Hello!" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FE-dS-6EA">
+                                <rect key="frame" x="15" y="8" width="129" height="29"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="135" id="C1N-h0-Jcz"/>
-                                </constraints>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -47,6 +44,7 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="djh-NW-7xc" secondAttribute="bottom" id="Eb5-NC-h3d"/>
                             <constraint firstAttribute="height" constant="45" id="NJv-rE-gsE"/>
+                            <constraint firstItem="3FE-dS-6EA" firstAttribute="leading" secondItem="PQ1-yh-e3S" secondAttribute="leading" constant="15" id="PJv-gS-ahz"/>
                             <constraint firstAttribute="bottom" secondItem="3FE-dS-6EA" secondAttribute="bottom" constant="8" id="nha-fg-6cC"/>
                             <constraint firstAttribute="trailing" secondItem="3FE-dS-6EA" secondAttribute="trailing" constant="30" id="pD3-GB-XpO"/>
                             <constraint firstAttribute="width" constant="174" id="uap-CB-ZQs"/>
@@ -73,6 +71,7 @@
                 <outlet property="message" destination="3FE-dS-6EA" id="S7s-Na-QSw"/>
                 <outlet property="time" destination="djh-NW-7xc" id="Uco-1H-YPr"/>
                 <outlet property="viewHeight" destination="NJv-rE-gsE" id="Flb-Pj-XcE"/>
+                <outlet property="viewWidth" destination="uap-CB-ZQs" id="Kzq-S7-lYs"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="97.098214285714278"/>
         </tableViewCell>

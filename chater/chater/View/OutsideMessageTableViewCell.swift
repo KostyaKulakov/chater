@@ -16,6 +16,8 @@ class OutsideMessageTableViewCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var viewHeight: NSLayoutConstraint!
     
+    @IBOutlet weak var viewWidth: NSLayoutConstraint!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

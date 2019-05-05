@@ -90,6 +90,7 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
             cell.time.text = message.time
             
             cell.viewHeight.constant = viewModel.getHeightCell(by: indexPath.row)
+            cell.viewWidth.constant = viewModel.getWidthtCell(by: indexPath.row)
             
             return cell
         } else {
@@ -100,6 +101,7 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
             cell.time.text = message.time
             
             cell.viewHeight.constant = viewModel.getHeightCell(by: indexPath.row)
+            cell.viewWidth.constant = viewModel.getWidthtCell(by: indexPath.row)
             
             return cell
         }

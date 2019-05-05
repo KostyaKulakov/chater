@@ -484,6 +484,7 @@
 			baseConfigurationReference = 961A33AD85D6A57E44E8FEB7 /* Pods-chater.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96VD7F35W2;
 				INFOPLIST_FILE = chater/Info.plist;
@@ -491,8 +492,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.kostyakulakov.chater;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.kostyakulakov.chater-new";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -503,6 +505,7 @@
 			baseConfigurationReference = 252C8150D03E0385BA7053DE /* Pods-chater.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96VD7F35W2;
 				INFOPLIST_FILE = chater/Info.plist;
@@ -510,8 +513,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.kostyakulakov.chater;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.kostyakulakov.chater-new";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

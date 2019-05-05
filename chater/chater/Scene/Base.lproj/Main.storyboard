@@ -247,7 +247,7 @@
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SM3-on-mvI">
-                                                <rect key="frame" x="0.0" y="763" width="414" height="56"/>
+                                                <rect key="frame" x="0.0" y="758" width="414" height="56"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Сообщение..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gie-gq-Bus" customClass="LoginTextField" customModule="chater" customModuleProvider="target">
                                                         <rect key="frame" x="15" y="3" width="337" height="50"/>
@@ -306,7 +306,7 @@
                                             <constraint firstAttribute="bottom" secondItem="PiH-q3-a0T" secondAttribute="bottom" constant="70" id="Uke-hw-dWb"/>
                                             <constraint firstAttribute="trailing" secondItem="SM3-on-mvI" secondAttribute="trailing" id="XpB-9y-kp2"/>
                                             <constraint firstItem="SM3-on-mvI" firstAttribute="leading" secondItem="wtj-cl-zhJ" secondAttribute="leading" id="aIW-sd-AOL"/>
-                                            <constraint firstAttribute="bottom" secondItem="SM3-on-mvI" secondAttribute="bottom" id="nwp-cd-HI0"/>
+                                            <constraint firstAttribute="bottom" secondItem="SM3-on-mvI" secondAttribute="bottom" constant="5" id="nwp-cd-HI0"/>
                                             <constraint firstItem="PiH-q3-a0T" firstAttribute="top" secondItem="5OB-so-tbO" secondAttribute="bottom" constant="8" id="pPc-p1-veh"/>
                                         </constraints>
                                     </view>
