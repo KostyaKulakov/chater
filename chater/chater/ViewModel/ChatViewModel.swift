@@ -52,15 +52,19 @@ class ChatViewModel {
     let outsideConstrainHeight = 30
     
     let textSize: CGFloat = 14
+    let nicknameSize: CGFloat = 12
     
     func getWidthtCell(by index: Int) -> CGFloat {
         let isInternalMessage = (messages[index].userid == (WSServer.instance.userID ?? 0))
-
         let text = messages[index].message
-        let analyzeText = text.count < messages[index].nickName.count ? messages[index].nickName : text
+        let analyzeText = text
         
-        var width = self.widthText(analyzeText, UIFont.systemFont(ofSize: textSize)).width
         
+        let nicknameWidth = self.widthText(messages[index].nickName, UIFont.systemFont(ofSize: nicknameSize)).width
+        let textWidth = self.widthText(analyzeText, UIFont.systemFont(ofSize: textSize)).width
+        
+        
+        var width = !isInternalMessage && nicknameWidth > textWidth ? nicknameWidth : textWidth
         
         if width > 210 {
             width = 210
